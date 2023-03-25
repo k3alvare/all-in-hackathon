@@ -1,0 +1,24 @@
+{
+  "name": "all-in-hackathon",
+  "version": "1.0.0",
+  "description": "Raise complaints about issues in the community.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k3alvare/all-in-hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k3alvare/all-in-hackathon/issues"
+  },
+  "homepage": "https://github.com/k3alvare/all-in-hackathon#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.60.0"
+  }
+}
+

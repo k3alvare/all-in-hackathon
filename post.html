@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <title></title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
+  </head>
+  <body class="posts">
+    <section class="post-incident">
+      <h2>Report an Incident</h2>
+      <form id="template-post">
+        <label for="incident-date">Date of Incident:</label>
+        <input
+          class="date-input"
+          type="date"
+          id="incident-date"
+          name="incident-date"
+          required
+        />
+
+        <p>Type of Incident:</p>
+        <fieldset required>
+          <div>
+            <input
+              type="checkbox"
+              id="type-burglary"
+              name="burglary"
+            />
+            <label
+              class="label-option"
+              for="burglary"
+              >Burglary</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="type-theft"
+              name="theft"
+            />
+            <label
+              class="label-option"
+              for="theft"
+              >Theft</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="type-sexual-assault"
+              name="sexual-assault"
+            />
+            <label
+              class="label-option"
+              for="sexual-assault"
+              >Sexual Assault</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="type-other"
+              name="other"
+            />
+            <label
+              class="label-option"
+              for="other"
+              >Other</label
+            >
+          </div>
+        </fieldset>
+
+        <label for="incident-summary">Brief Summary of Incident:</label>
+        <br />
+        <textarea
+          id="incident-summary"
+          name="incident-summary"
+          rows="6"
+          required
+        ></textarea>
+        <br />
+
+        <button
+          type="submit"
+          class="button-post btn btn-primary"
+        >
+          Post
+        </button>
+      </form>
+    </section>
+    <main>
+      <h2>Recent Incidents</h2>
+      <ul id="incidents-list"></ul>
+    </main>
+    <script
+      type="module"
+      src="./javascript/post-populated.js"
+    ></script>
+  </body>
+</html>

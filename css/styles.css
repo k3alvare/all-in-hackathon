@@ -1,0 +1,103 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet (Potrait)
+900 - 1200px:   Tablet (Landscape)
+{1200 - 1800px] is where our normal styles apply
+1800+:          Big desktop
+
+$breakpoint arguement choices: 
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+:root {
+  --color-blue: #003049; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+h2 {
+  font-size: 3.2rem;
+  margin-top: 0;
+  text-align: center; }
+
+.post-incident {
+  padding: 2rem 3rem;
+  margin: 2rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: #383838;
+  max-width: 90rem;
+  width: 90%;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif; }
+  .post-incident h2 {
+    margin-bottom: 2rem;
+    font-weight: 700; }
+  .post-incident p {
+    margin-top: 2rem; }
+
+label,
+legend,
+.post-incident p {
+  font-size: 1.7rem; }
+
+.label-option {
+  font-size: 1.5rem; }
+
+.post-incident p {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem; }
+
+textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 1rem; }
+
+fieldset {
+  padding: 0 1rem;
+  margin-bottom: 1.75rem; }
+  fieldset div {
+    margin-left: 6px;
+    padding-bottom: 0.3rem; }
+
+.button-post {
+  margin-top: 2rem;
+  background-color: #8a2b06;
+  width: 15rem;
+  height: 2.8rem;
+  border-radius: 100vw;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
+.date-input {
+  font-size: 1.3rem;
+  text-align: center; }
+
+.posts {
+  background-color: #383838;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

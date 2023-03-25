@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/animations";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/postIncident";
+
+@import "pages/posts";
