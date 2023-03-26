@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SafeVersity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="login.css" rel="stylesheet" type="text/css" />
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.campussafetymagazine.com/wp-content/uploads/2022/09/new-college-students-1000x500.jpg");
+      height:600px;
+      min-height: 100%;
+      box-shadow: 0 3000px rgba(0, 0, 0, 0.6) inset;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">SafeVersity</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/home.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="/post.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> POST</a>
+      <a href="/support.html" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> SUPPORT</a>
+      <a href="/login.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> LOGIN</a>
+      
+    </div>
+    
+  </div>
+</div>
+
+<main>
+<div class="bgimg-1"> 
+<br></br> 
+<div style="background-color: white;"class="form">
+      
+     
+
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Log In</h1>
+          <p2>If you do not have an account, 
+          you can sign up here too.</p2>
+          
+          <form action="/" method="post">
+        
+        <div class="field-wrap">
+            <label for="username"></label>
+            <input placeholder="Email Address" type="email"required autocomplete="off"/>
+          </div> 
+          
+          <div class="field-wrap">
+            <label for="password"></label>
+            <input placeholder="Password" type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block">Get Started</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block">Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+
+</div>
+</main>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+ <p class="w3-small">© SafeVersity 2023. All rights reserved.</p>
+ 
+</footer>
+ 
+
+
+</body>
+</html>
