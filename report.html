@@ -23,61 +23,17 @@
     <section class="post-incident">
       <h2>Accident report filtering</h2>
 	  <p>Filter by type of accident:</p>
-	  <fieldset required>
-		<div>
-		  <input
-			type="checkbox"
-			id="type-burglary"
-			name="burglary"
-		  />
-		  <label
-			class="label-option"
-			for="burglary"
-			>Burglary</label
-		  >
-		</div>
-		<div>
-		  <input
-			type="checkbox"
-			id="type-theft"
-			name="theft"
-		  />
-		  <label
-			class="label-option"
-			for="theft"
-			>Theft</label
-		  >
-		</div>
-		<div>
-		  <input
-			type="checkbox"
-			id="type-sexual-assault"
-			name="sexual-assault"
-		  />
-		  <label
-			class="label-option"
-			for="sexual-assault"
-			>Sexual Assault</label
-		  >
-		</div>
-		<div>
-		  <input
-			type="checkbox"
-			id="type-other"
-			name="other"
-		  />
-		  <label
-			class="label-option"
-			for="other"
-			>Other</label
-		  >
-		</div>
-	  </fieldset>
-	  <div id="filterbut">
-		<button class="filter" onclick="filterFunc('Burglary')"> Burglary</button>
-		<button class="filter" onclick="filterFunc('Theft')"> Theft</button>
-		<button class="filter" onclick="filterFunc('fruits')"> Sexual Assault</button>
-		<button class="filter" onclick="filterFunc('colors')"> Other</button>
+	  <div id="filterbutton1">
+		<button class="filter" onclick="filterSelectionB()"> Burglary</button>
+	  </div>
+	  <div id="filterbutton2">
+		<button class="filter" onclick="filterSelectionT()"> Theft</button>
+	  </div>
+	  <div id="filterbutton3">
+		<button class="filter" onclick="filterSelectionS()"> Sexual Assault</button>
+	  </div>
+	  <div id="filterbutton4">
+		<button class="filter" onclick="filterSelectionO()"> Other</button>
 	  </div>
       <ul id="incidents-list"></ul>
     </main>
